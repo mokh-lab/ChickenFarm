@@ -61,5 +61,41 @@ page 50120 "Chicken Card"
         }
     }
 
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionNr01) // Creates a direct action that appears on the bar 
+            {
+                Caption = 'Action Nr 01';
+                Image = MakeOrder;
+                ApplicationArea = All;
+                RunObject = page "Customer Card";
+            }
+        }
 
+        area(Creation) // Create a new list Under the name New Document
+        {
+            action("Creation Action #1")
+            {
+                Caption = 'Creation Action #1';
+                Image = Absence;
+                ApplicationArea = All;
+                RunObject = page "Customer Card";
+            }
+
+            action("Creation Action #2")
+            {
+                Caption = 'Creation Action #2';
+                Image = Alerts;
+                ApplicationArea = All;
+                trigger OnAction()
+                begin
+                    Message('This is a Test for [Trigger onAction]');
+                end;
+            }
+        }
+
+
+    }
 }
