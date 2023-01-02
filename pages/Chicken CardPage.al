@@ -38,10 +38,23 @@ page 50120 "Chicken Card"
 
                 }
 
+                field("Chicken Type Code"; rec."Chicken Type Code")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'chicken Type Code';
+                }
+
                 field(" Chicken Type Description"; rec."Chicken Type Description")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Chicken Type Description';
+                }
+
+                field("Number of Eggs Produced"; rec."Number of Eggs Produced")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Number of Eggs Produced';
+
                 }
 
             }

@@ -1,4 +1,4 @@
-page 50124 MyPage
+page 50124 "Egg Type"
 {
     PageType = Card;
     ApplicationArea = All;
