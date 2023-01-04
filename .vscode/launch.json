@@ -13,7 +13,7 @@
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "769d0aa2-a318-406d-98ce-ac5086e7c095",
+            "tenant": "",//***************************************** This must be fixed****************************************
             "schemaUpdateMode": "Recreate" 
         }
     ]
