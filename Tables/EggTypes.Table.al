@@ -1,6 +1,6 @@
-table 50122 EggType
+table 50122 EggTypes
 {
-    Caption = 'EggType';
+    Caption = 'EggTypes';
     DataClassification = CustomerContent;
 
     fields

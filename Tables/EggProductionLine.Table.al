@@ -51,7 +51,7 @@ table 50127 EggProductionLine
 
             Caption = 'Egg Type Description';
             FieldClass = FlowField;
-            CalcFormula = lookup(EggType.Description where(code = field("Egg Type Code")));
+            CalcFormula = lookup(EggTypes.Description where(code = field("Egg Type Code")));
         }
 
         field(9; Quantity; Decimal)

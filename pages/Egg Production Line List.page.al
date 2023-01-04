@@ -2,10 +2,10 @@ page 50129 "Egg Production Line List"
 {
     Caption = 'Egg Production Line List';
     PageType = List;
-    UsageCategory = Lists;
+    UsageCategory = None;
     ApplicationArea = All;
     SourceTable = EggProductionLine;
-    Editable = true;
+    Editable = false;
 
     layout
     {

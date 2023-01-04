@@ -72,7 +72,7 @@ table 50120 Chicken
         {
             Caption = 'Egg Type Filter';
             FieldClass = FlowFilter;
-            TableRelation = EggType;
+            TableRelation = EggTypes;
         }
 
 

@@ -1,4 +1,4 @@
-page 50125 " Chicken Management Rolecenter"
+page 50125 "Chicken Management Rolecenter"
 {
     PageType = RoleCenter;
     Caption = ' Chicken Management Rolecenter';
@@ -31,7 +31,7 @@ page 50125 " Chicken Management Rolecenter"
             {
                 Caption = 'Master Data Action Group';
                 ToolTip = 'Master Data';
-                Image = List;
+                Image = RegisteredDocs;
 
 
                 action("ChickenList")
@@ -64,7 +64,7 @@ page 50125 " Chicken Management Rolecenter"
                 action(EggTypes)
                 {
                     ToolTip = 'Egg Types';
-                    RunObject = page "Egg Type";
+                    RunObject = page "Egg Types";
                     ApplicationArea = all;
                 }
             }
@@ -99,7 +99,7 @@ page 50125 " Chicken Management Rolecenter"
             action(eEggTypes)
             {
                 ToolTip = 'eEggTypes';
-                RunObject = page "Egg Type";
+                RunObject = page "Egg Types";
                 ApplicationArea = all;
 
             }

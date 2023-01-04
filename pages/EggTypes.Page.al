@@ -1,9 +1,9 @@
-page 50124 "Egg Type"
+page 50124 "Egg Types"
 {
     PageType = Card;
     ApplicationArea = All;
     UsageCategory = Administration;
-    SourceTable = EggType;
+    SourceTable = EggTypes;
 
     layout
     {
