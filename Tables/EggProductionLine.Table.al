@@ -1,28 +1,28 @@
 table 50127 EggProductionLine
 {
     Caption = 'Egg Production Line Table';
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
     DrillDownPageId = 50129;
 
     fields
     {
         field(1; "Document No."; Code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Document No.';
 
         }
 
         field(2; "Line No."; Code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Line No.';
 
         }
 
         field(3; "Chicken No."; Code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Chicken No.';
             TableRelation = Chicken;
 
@@ -30,19 +30,19 @@ table 50127 EggProductionLine
 
         field(4; "Chicken Description"; text[100])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Chicken Description';
 
         }
 
         field(5; "Egg Production Date"; Date)
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Egg Production Date';
         }
         field(6; "Egg Type Code"; Code[20])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Egg Type Code';
             TableRelation = ChickenType;
         }
@@ -57,7 +57,7 @@ table 50127 EggProductionLine
         field(9; Quantity; Decimal)
         {
             Caption = 'QTY';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
 
     }

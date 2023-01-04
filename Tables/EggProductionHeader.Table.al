@@ -1,6 +1,6 @@
 table 50126 EggProductionHeader
 {
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
     Caption = 'Egg Production Header Table';
 
     fields
@@ -8,14 +8,14 @@ table 50126 EggProductionHeader
         field(1; "No."; Code[20])
         {
             Caption = 'No.';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
 
         }
 
         field(2; DocumentDate; Date)
         {
             Caption = 'Document Date';
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
     }
 

@@ -2,6 +2,7 @@ table 50122 EggTypes
 {
     Caption = 'EggTypes';
     DataClassification = CustomerContent;
+    LookupPageId = 5124;
 
     fields
     {
@@ -26,7 +27,16 @@ table 50122 EggTypes
             Clustered = true;
         }
     }
+    procedure InsertEggType(PEggTypeCode: Code[20]; PEggTypeDescription: text[50])
+    var
+        REggType: Record EggTypes;
+    begin
+        Clear(REggType);
+        REggType.Code := PEggTypeCode;
+        REggType.Description := PEggTypeDescription;
+        REggType.Insert();
 
+    end;
 
 
 }
