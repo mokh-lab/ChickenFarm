@@ -99,9 +99,9 @@ table 50120 Chicken
         chickenHasEggErr: Label 'The Chicken %1 %2 has eggs, you can''t detele it.', Comment = '%1 = Chicken No. ; %2 = Chicken Description';
     begin
         Clear(EggProductionLine);
-        EggProductionLine.SetRange("Chicken No.");
+        EggProductionLine.SetRange("Chicken No.", Rec."No.");
         if EggProductionLine.FindFirst() then
-            Error(chickenHasEggErr);
+            Error(chickenHasEggErr, rec."No.", Rec.Description);
 
 
 
